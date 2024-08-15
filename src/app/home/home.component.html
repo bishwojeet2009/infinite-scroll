@@ -1,0 +1,18 @@
+<section>
+    <div class="container mt-3 " infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50"
+        (scrolled)="nextList()">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 my-3" *ngFor="let item of itemList$ | async">
+                <div class="card">
+                    <img class="profilePic" [src]="item.picture.medium" alt="Profile Pic">
+                    <div>
+                        <h2 class="nameInfo">Name: {{item.name.first}}</h2>
+                        <p class="countryInfo">Country: {{item.location.country}}</p>
+                        <p class="genderInfo">Gender: {{item.gender}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <mat-spinner *ngIf="loadingItem" class="mx-auto my-5" diameter="50"></mat-spinner>
+    </div>
+</section>
