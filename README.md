@@ -4,24 +4,31 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Project Dependencies
 
-## Code scaffolding
+The project includes the following key dependencies as specified in the package.json:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Angular Packages (v14.x): Core packages required to run the Angular application (@angular/core, @angular/common, @angular/forms, etc.).
 
-## Build
+2. Angular Material (v13.x): Provides UI components for the application.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. NgRx Store (v14.x): State management for Angular applications.
 
-## Running unit tests
+4. ngx-infinite-scroll (v14.x): A library for implementing infinite scroll in Angular.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+5. RxJS (v7.5.x): A reactive programming library used for managing asynchronous data streams.
 
-## Running end-to-end tests
+6. Node version 16 or above.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Setup
 
-## Further help
+1. Clone the Repository: git clone https://github.com/bishwojeet2009/infinite_scroll.git
+2. Install Dependencies: Make sure you have Node.js and npm installed. Install the project's dependencies using npm install.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Run
+
+Run the Application: To start the application, use the ng serve.
+
+## Test
+
+To test the application, go to http://localhost:4200. On the root path, you will find the main page (Home Page) where you can see the profiles of 10 people loaded. As you scroll down and reach 80% of the page height, more content will be loaded. If there is a delay in fetching data, a loading icon will be displayed, which will disappear once the data is fetched.
