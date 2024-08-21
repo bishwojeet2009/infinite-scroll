@@ -31,4 +31,8 @@ Run the Application: To start the application, use the ng serve.
 
 ## Test
 
-To test the application, go to http://localhost:4200. On the root path, you will find the main page (Home Page) where you can see the profiles of 10 people loaded. As you scroll down and reach 80% of the page height, more content will be loaded. If there is a delay in fetching data, a loading icon will be displayed, which will disappear once the data is fetched.
+To test the application, visit http://localhost:4200. On the main page (root path), you'll find the profiles of 10 people initially loaded. As you scroll down and reach 80% of the page height, additional content will automatically load. If there is a delay in fetching the data, a loading icon will appear and disappear once the data is successfully retrieved, ensuring smooth performance even on slow networks. The application is responsive across different devices: profiles are displayed in 3 columns on desktops, 2 columns on tablets, and 1 column on mobile devices, demonstrating the application's adaptability.
+
+## Testing via link
+
+To test the application, visit https://bishwojeet2009.github.io/infinite-scroll. On the main page, you'll find the profiles of 10 people initially loaded. As you scroll down and reach 80% of the page height, additional content will automatically load. If there is a delay in fetching the data, a loading icon will appear and disappear once the data is successfully retrieved, ensuring smooth performance even on slow networks. The application is responsive across different devices: profiles are displayed in 3 columns on desktops, 2 columns on tablets, and 1 column on mobile devices, demonstrating the application's adaptability.
